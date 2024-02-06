@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    .font{
+      font-family: 'Outfit', sans-serif;
+    }
+    .chai{
+        transition-duration: 0.5s;
+    }
+    .chai:hover{
+        box-shadow: 0 0 0 30px yellow;
+        border-radius: 50%;
+    }
+    .none{
+        cursor:none;
+    }
+    .box{
+        box-shadow: 30px 30px gray;
+    }
+    .box2{
+        transition-duration: 0.7s;
+    }
+    .box2:hover{
+        box-shadow: 0 0 100px 0 white;
+    }
+    .blinking-light {
+        width: 50px;
+        height: 50px;
+        /* background-color: ; */
+        animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.bck{
+    background-image: url(abstract-dark-background-with-purple-lines-generative-ai.jpg);
+}
+
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<!-- bg-[#2b323c] -->
+<body class="bck h-full font text-white transition-all">
+    <!-- <div class="container mx-auto flex justify-end py-16">
+        <div class="flex space-x-2"><h1>Change Theme</h1><input onclick="theme()" id="thm" type="checkbox" class="toggle" checked /></div>
+    </div> -->
+    <!-- <div class="container mx-auto max-w-[100px]">
+        <button class="btn btn-primary">Click ME</button>
+    </div> -->
+    <div class="blinking-light mx-auto container flex justify-center max-w-[366px] bg-gradient-to-r from-gray-500 to-black rounded-2xl shadow  lg:max-w-[640px] translate-y-11">
+        <h1 class="capitalize font-bold text-[24px]">hello progrmmers</h1>
+    </div>
+    <br><br>
+    <div class="container mx-auto flex justify-center font-bold px-4 text-center"><span class="project text-[16px] lg:text-[24px]"></span></div>
+    <br><br>
+    <section class="container mx-auto opacity-90 bg-gray-950 rounded-3xl flex justify-center items-center space-x-8 space-y-7 py-20 flex-col lg:flex-row">
+        <div class="w-[400px] h-[400px]">
+            <img src="https://spectatech.co.uk/wp-content/uploads/2023/04/Untitled-design-8.gif" alt="">
+        </div>
+        <div class="max-w-[320px] lg:max-w-[640px]" id="text">
+            <div class="flex flex-col-reverse lg:flex-row justify-between items-center space-x-24">
+                <div><img class="w-[150px] h-[150px] rounded-full box" src="coder.jpg" alt=""></div>
+                <div><img class="hidden lg:w-[150px] h-[150px] rounded-full box2 border-none lg:block" src="https://lh6.googleusercontent.com/gNC6RBBrmNdvgXJ18K45nJU15SlfAPcviCp7jxF-mvx2fucZ1enV97aiNNiV3i2T64jfn9MAR1ayRkFjbKRFBm1v1AYiuaWqmNdY_bOoozOGSFZLvI0bGJZNIrWwLPP64w=w1280" alt=""></div>
+                <!-- <div class="blinking-light"></div> -->
+
+            </div>
+            <br>
+            <h1 class="text-[24px] italic">Hello Iam <span class="one  text-red-400"></span>aad <span class="two text-red-500"></span>bn <span class="three text-red-600"></span>khter</h1>
+            <br>
+            <h1 class="text-yellow-300 text-[22px]"> <span class="role"></span> </h1> 
+            <br>
+            <p><span class="text none"></span></p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".text",{
+            strings:["Hi, I'm Saad Ibn Akter, a 14-year-old with a profound passion for programming, robotics, sports, and creative writing. I immerse myself in coding languages, engineering projects, and the world of literature with an unyielding curiosity. Whether excelling in sports or crafting imaginative stories, I envision a future where technology and creativity seamlessly intersect, defining my unique journey.","হ্য়ালো প্রোগ্রামমার্স , আমি সাদ ইবনে আকতার , ১৪ বছরের একজন প্রোগ্রামিং, রোবটিক্স, খেলাধুলা, এবং সৃষ্টিশীল লেখার দিকে অত্যন্ত আগ্রহী। আমি আমার নিজস্ব প্রতিবেদনে কোডিং ভাষা, প্রকৌশল প্রকল্প, এবং সাহিত্যে আত্মমোহিত হয়ে থাকি। খেলাধুলায় অথবা কল্পনাশীল গল্প রচনায়, আমি একটি ভবিষ্যত্তের চিত্রকল্প করছি যেখানে প্রযুক্তি এবং সৃজনশীলতা একত্রে মেলে আসে, আমার অনন্য পথনির্ধারণ করে। ...text generated from chatGPT"],
+            typeSpeed:0.2,
+            backSpeed:0.5,
+            loop:true
+            
+        });
+        // var sol = document.getElementsByClassName("text-yellow-300").color="red-300";
+        var typea = new Typed(".one",{
+            strings:["S","$"],
+            typeSpeed:100,
+            backSpeed:200,
+            loop:true,
+            showCursor: false
+        });
+        var typeb = new Typed(".two",{
+            strings:["I","!"],
+            typeSpeed:100,
+            backSpeed:200,
+            loop:true,
+            showCursor: false
+        });var typec = new Typed(".three",{
+            strings:["A","@"],
+            typeSpeed:100,
+            backSpeed:200,
+            loop:true,
+            showCursor: false
+        });
+        var typex = new Typed(".role",{
+            strings:["Programmer","Problem Solver","Writter","Sportsman","Future Red Coder"],
+            typeSpeed:5,
+            backSpeed:5,
+            loop:true,
+            showCursor: false
+        });
+        var pro = new Typed(".project",{
+            strings:["This is a simple project coded with HTML CSS and javaScript","Please rate the project at ConceptCrackerz.com"],
+            typeSpeed:2,
+            backSpeed:2,
+            loop:true
+        });
+        // var last  = new Typed(".last",{
+        //     strings:["Little Programmer","Future Roboticist","Future Red Coder"];
+        //     typeSpeed:3,
+        //     backSpeed:3,
+        //     loop
+        // })
+        function theme(){
+            if(document.getElementById("thm").checked === false){
+                document.getElementsByTagName("body").innerText ="Hello";
+            }
+        }
+    </script>
+</body>
+</html>
